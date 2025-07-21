@@ -14,13 +14,13 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
 	if(react.includes("boss") ||
-     react.includes("virat") || 
+     react.includes("DJ") || 
 react.includes("owner")) {
 		var msg = {
-				body: "★𝗢𝘄𝗻𝗲𝗿 + ❤️...𝐃𝗝 🅣︎🄰🅑︎🄷🅐︎🄸...❤️ ● ──────────────── ●👺☠️𝗗𝗝 𝐓𝐀𝐁𝐇𝐀𝐈🥷● ──────────────── ●𝐎𝐰𝐧𝐞𝐫 ➻❤️....𝐃𝗝 🅣︎🄰🅑︎🄷🅐︎🄸....❤️",attachment: fs.createReadStream(__dirname + `/noprefix/djtabhai.jpg`)
+				body: "★𝗢𝘄𝗻𝗲𝗿 + ❤️...𝐃𝗝 🅣︎🄰🅑︎🄷🅐︎🄸...❤️ ● ──────────────── ●👺☠️𝗗𝗝 𝐓𝐀𝐁𝐇𝐀𝐈🥷● ──────────────── ●𝐎𝐰𝐧𝐞𝐫 ➻❤️....𝐃𝗝 🅣︎🄰🅑︎🄷🅐︎🄸....❤️",attachment: fs.createReadStream(__dirname + `/noprefix/dj.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("📷", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🍻", event.messageID, (err) => {}, true)
 		}
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
